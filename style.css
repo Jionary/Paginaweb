@@ -7,7 +7,6 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: red;
 }
 nav img {
   width: 90px;

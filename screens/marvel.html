@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/marvel.css" />
     <title>Marvel :)</title>
   </head>
   <body>
@@ -20,8 +21,16 @@
     <main>
        <div id = "apiData" ></div>
        <button id="apibutton">Buscar</button>
-       <script src="../js/api-data.js"></script>
-      <script src = "../js/marvel.js"></script>
     </main>
+    <div class="container">
+      <div class="input-container">
+        <input type="text" class="input-box" value="Busca tu heroe" id="input-box">
+        <button class="button" id="sumbit-button">Enviar</button>
+        <div class="list"></div>
+        <div class="display-container" id="show-container"></div>
+        <script src="../js/api-data.js"></script>
+        <script src = "../js/marvel.js"></script>
+      </div>
+    </div>
   </body>
 </html>
