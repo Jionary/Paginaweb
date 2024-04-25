@@ -112,3 +112,8 @@ button:after {
   top: 0;
   border-radius: 10px;
 }
+
+.Banner {
+  max-width: 100%;
+  height: auto;
+}
