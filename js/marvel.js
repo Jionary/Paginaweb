@@ -7,21 +7,9 @@ const callAPI = () => {
   )
     .then((res) => res.json())
     .then((data) => {
-      apiData.innerText = JSON.stringify(data.comics);
+      apiData.innerText = JSON.stringify(data.name);
     })
     .catch((e) => console.log(new Error(e)));
 };
 
 apibutton.addEventListener("click", callAPI);
-
-/*
-let button = document.getElementById("submit-button");  
-let showContainer = document.getElementById  
-("show-container");  
-let listContainer = document.querySelector(".list");  
-let date $\bar{F}$ new Date();  
-console. $\log ($ date.getTime());  
-const [timestamp, apiKey, hashValue] $=[$ ts, publickey,  
-hashVal];  
-button.addEventListener;
-*/
