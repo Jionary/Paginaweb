@@ -1,12 +1,13 @@
 body {
   width: auto;
   margin: 0%;
+  background-color: #10061e;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  background-color: red;
 }
 nav img {
   width: 90px;
@@ -15,11 +16,14 @@ nav img {
 nav ol {
   list-style-type: none;
   display: flex;
+  justify-content: center;
 }
 nav ol li {
   margin: 10px;
+  font-size: 20px;
 }
 a {
   text-decoration: none;
   color: #530000;
+  color: white;
 }
