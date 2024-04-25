@@ -1,80 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(45deg, #025579, #1d2dbf, #ffffff);
-  background-size: 300% 300%;
-  animation: color 15s ease-in-out infinite;
-  text-align: center;
+body {
+  width: auto;
+  margin: 0%;
 }
 
-nav ul {
-  list-style: none;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px 0;
-  margin: 0;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
-
-nav a {
-  color: black;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: inline-block;
-  transition: color 0.3s ease;
+nav img {
+  width: 90px;
+  padding: 5px;
 }
-
-nav a:hover {
-  color: #ddeeff;
+nav ol {
+  list-style-type: none;
+  display: flex;
 }
-
-figure img {
-  max-width: 100%;
-  height: auto;
+nav ol li {
+  margin: 10px;
 }
-
-figure {
-  text-align: center;
-  margin: 20px 0;
-}
-
-@keyframes color {
-  0%, 100% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
 a {
-  color: #fff;
-}
-
-.button-nav {
-  transition: all 0.5s;
-  font-size: 17px;
-  padding: 1ch 2ch;
-  background-color: white;
-  color: #000;
-  font-family: Roboto, sans-serif;
-  border: none;
-  border-radius: 2px;
-  box-shadow: 2px 2px 0px hsl(0, 0%, 0%),
-    4px 4px 0px hsl(0, 0%, 80%),
-    6px 6px 0px hsl(0, 0%, 70%),
-    8px 8px 0px hsl(0, 0%, 60%),
-    10px 10px 0px hsl(0, 0%, 50%),
-    12px 12px 0px hsl(0, 0%, 40%),
-    14px 14px 0px hsl(0, 0%, 30%),
-    16px 16px 0px hsl(0, 0%, 20%),
-    18px 18px 0px hsl(0, 0%, 10%);
-}
-
-.button-nav:hover {
-  background-color: hsl(0, 0%, 50%);
-  color: #fff;
-  box-shadow: none;
+  text-decoration: none;
+  color: #530000;
 }
