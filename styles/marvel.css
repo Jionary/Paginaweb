@@ -1,48 +1,90 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  background: linear-gradient(45deg, red, #050303);
+  background-size: 400%, 400%;
+  position: relative;
+  animation: cambiar 5s ease-in-out infinite;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav img {
+  width: 90px;
+  padding: 5px;
+}
+nav ol {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav ol li {
+  margin: 10px;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #530000;
+  color: white;
+}
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-.container{
-    background-color: #FFFFFF;
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 3em 2em;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    right: 50%;
-    top: 1em;
-    border-radius: 1em;
+.container {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 3em 2em;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  right: 50%;
+  top: 1em;
+  border-radius: 1em;
 }
 
 .input-container {
-    display: grid;
-    grid-template-columns: 9fr 3fr;
-    gap: 1em;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
 }
 
 input {
-    padding: 1em 0.5em;
-    background-color: rgb(39, 35, 35);
-    color: azure;
-    border-radius: 0.5em;
-    outline: 0;
+  padding: 1em 0.5em;
+  background-color: rgb(39, 35, 35);
+  color: azure;
+  border-radius: 0.5em;
+  outline: 0;
 }
 
-button{
-  background: #FC4754;
-  border: 1px solid #FC4754;
+button {
+  background: #fc4754;
+  border: 1px solid #fc4754;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 16px;
@@ -62,13 +104,13 @@ button:hover,
 button:active {
   background-color: initial;
   background-position: 0 0;
-  color: #FC4754;
+  color: #fc4754;
 }
 
 button:active {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .display-container {
-    padding: 1em;
+  padding: 1em;
 }
