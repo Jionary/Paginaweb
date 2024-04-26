@@ -11,13 +11,13 @@ html, body {
 .container{
     background-color: #FFFFFF;
     width: 90%;
-    max-width: 500px;
     padding: 3em 2em;
     position: fixed;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 1em;
+    margin-top: 60px;
 }
 
 .input-container {
